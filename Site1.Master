@@ -1,0 +1,70 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="projectasp.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+      
+    </asp:ContentPlaceHolder>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <style>
+        .navbar {
+  overflow: hidden;
+  background-color: white;
+}
+
+
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: midnightblue;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+
+.navbar a:hover{
+  background-color: lightblue;
+}
+        .auto-style1 {
+            width: 876px;
+        }
+        .auto-style2 {
+            width: 352px;
+        }
+    </style>
+</head>
+<body style="background-color:powderblue">
+    <form id="form1" runat="server">
+        
+            <table>
+            <tr>
+                    <td class="auto-style2">
+                        <img alt="" class="good1"  src="logoreg.jpg" /></td>
+                    <td class="auto-style1" ><h1 style="color:midnightblue"><i style='font-size:50px' class='fas'>&#xf109;</i>&nbsp;&nbsp; ONLINE CAMPUS REGISTRATION</h1></td>
+               </tr>
+                </table>
+            <div class="navbar">
+            <a class="active" href="home.aspx"><i class="fa fa-fw fa-home"></i> HOME </a>                
+                <a  href="companyreg.aspx"><i class='fas fa-globe'></i> NEW COMPANY</a>
+              <a  href="studentreg.aspx"><i style='font-size:16px' class='fas'>&#xf5da;</i> NEW STUDENT</a>
+                <a href="educationreg.aspx"><i class='fas fa-user-graduate'></i> EDUCATION DETAILS</a>
+                <a class="active" href="loginpage.aspx"><i class="fa fa-fw fa-user"></i> LOGIN </a>
+                <a href="aboutus.aspx"><i style='font-size:16px' class='fas'>&#xf004;</i>&nbsp ABOUT US</a>
+            
+                
+                  </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+               
+            </asp:ContentPlaceHolder>
+      
+    </form>
+</body>
+</html>
